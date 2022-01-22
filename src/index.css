@@ -1,3 +1,43 @@
 @import 'tailwindcss/dist/base.css';
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
+
+.text-center{
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    height: auto;
+}
+
+#container{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+    #container div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 400px;
+        min-height: 150px;
+        margin: 12px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+        cursor: pointer;
+    }
+
+        #container div:hover{
+            box-shadow: 0 0 30px rgb(89, 131, 89);
+            margin-top: 6px;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        #container div img{
+            width: 150px;
+            height: 150px;
+        }
